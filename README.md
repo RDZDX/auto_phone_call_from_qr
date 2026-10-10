@@ -1,4 +1,4 @@
-# Auto_phone_call_from_qr - scan QR code, if TEL URI, then auto call
+# Auto_phone_call_from_qr - scan QR code, if it contains TEL URI, then auto call number
 
 ## File
 - [auto_phone_call_from_qr.vxp](https://rdzdx.github.io/auto_phone_call_from_qr/auto_phone_call_from_qr.vxp) 

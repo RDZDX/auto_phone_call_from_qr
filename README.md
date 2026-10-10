@@ -1,4 +1,4 @@
-# Auto_phone_call_from_qr - scan the QR code, if a TEL URI is detected, initiate the phone call sequence.
+# Auto_phone_call_from_qr - scan the QR code, if a TEL URI is detected, initiate the auto phone call sequence.
 ## File
 - [auto_phone_call_from_qr.vxp](https://rdzdx.github.io/auto_phone_call_from_qr/auto_phone_call_from_qr.vxp) 
 

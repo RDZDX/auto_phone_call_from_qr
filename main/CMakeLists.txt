@@ -2,21 +2,22 @@ set(TARGET_NAME "main")
 
 set(SOURCES 
     main.c
-    bch15_5.c
-    isaac.c
-    qrdec.c
-    scanner.c
+    config.c
+    error.c
     image.c
     refcnt.c
-    util.c
-    binarize.c
+    scanner.c
     decoder.c
-    qrdectxt.c
-    svg.c
-    img_scanner.c
-    qr_finder.c
-    rs.c error.c
     symbol.c
+    img_scanner.c
+    decoder/qr_finder.c
+    qrcode/qrdec.c
+    qrcode/qrdectxt.c
+    qrcode/rs.c
+    qrcode/isaac.c
+    qrcode/bch15_5.c
+    qrcode/binarize.c
+    qrcode/util.c
 )
 
 add_exec_vxp(${TARGET_NAME} 
@@ -30,6 +31,7 @@ add_exec_vxp(${TARGET_NAME}
 )
 
 include_directories(${MRE_SDK}/include/service ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(${TARGET_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(${TARGET_NAME} mreapi)
 

@@ -151,6 +151,7 @@ int qr_code_data_list_extract_text(const qr_code_data_list *_qrlist,
     }
 
     /*Step 2: Convert the entries.*/
+    if(sa_size>1)sa_ctext+=sa_size-1;
     sa_text=(char *)malloc((sa_ctext+1)*sizeof(*sa_text));
     sa_ntext=0;
     eci=-1;

@@ -26,6 +26,7 @@
 #include "config.h"
 #include <stdio.h>   /* Added for fprintf */
 #include <stdlib.h>  /* Added for abort */
+#include "mre_zbar_alloc.h"
 
 #if 0//defined(_WIN32)
 # include <windows.h>
@@ -94,4 +95,3 @@ static int _zbar_refcnt (refcnt_t *cnt,
 void _zbar_refcnt_init(void);
 
 #endif
-
